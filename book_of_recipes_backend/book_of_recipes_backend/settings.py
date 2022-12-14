@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-si(etlunv9^cpbtk3##kfj@6=@5+ya@41%2b84nnj!rlx^t6s0'
+SECRET_KEY = 'some_secret_key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'drf_yasg',
-    # 'django_filters',
 
     'book',
 ]
@@ -134,14 +133,6 @@ MEDIA_ROOT = 'media/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# Rest Framework
-
-# REST_FRAMEWORK = {
-#     'DEFAULT_FILTER_BACKENDS': (
-#         'django_filters.rest_framework.DjangoFilterBackend',
-#     ),
-# }
 
 # Cors headers
 # https://github.com/adamchainz/django-cors-headers
